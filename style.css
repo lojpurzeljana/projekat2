@@ -1,0 +1,530 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+html
+{ 
+   scroll-behavior: smooth;
+  
+}
+
+*
+{
+ 
+   padding: 0;
+   margin: 0;
+ box-sizing: border-box;
+   
+
+  
+  
+}
+
+
+ header
+ {
+   width: 100vw;
+   height: 100vh;
+   background-image: url('sushiwhite.jpg');
+   background-repeat: no-repeat;
+   background-size:contain;
+   margin-left: 50px;
+   display: flex;
+   align-items:center;
+   justify-content:center;
+    
+ }
+ 
+ .header-content
+ {
+
+   margin-left: 800px;
+   margin-top: 0px;
+     
+   }
+
+ .header-content button 
+ {
+   
+   background-color: rgb(152, 228, 38) ;
+   border-color:   rgb(152, 228, 38) ;
+   padding: 10px 10px;
+   margin: 60px ;
+   border-radius: 10px;
+   margin-left: 290px;
+ }
+    
+ .header-content button:hover
+ {
+   background-color: rgb(227, 48, 48);
+   border-color: rgb(227, 48, 48); 
+ 
+    
+    cursor: pointer;
+    
+    
+ }  
+ .header-content button a:hover
+ {
+   color: white;
+   font-style: italic;
+ }
+
+ .header-content a
+ {
+    text-decoration: none;
+    font-family: 'Arvo', serif;
+   font-style: italic;
+    font-size: 18px;
+    color:rgb(0, 0, 0);
+ }
+
+ 
+
+ .header-content h1
+ {
+    font-size: 60px;
+    letter-spacing: 10px;
+    color:rgba(255, 86, 13, 0.9);  
+    text-align: center;
+    animation: h1 6s 1 ;
+    animation-iteration-count:infinite;
+
+ }
+ 
+
+ @keyframes h1
+ {
+   0%{
+      color: rgb(255, 255, 255);
+      margin-bottom: -10px;
+   }
+   30%{
+      letter-spacing: 20px;
+      margin-bottom: -10px;
+   }
+
+   85%
+   {
+      letter-spacing: 12px;
+      margin-bottom: -10px;
+   }
+   
+   100%
+   {
+      letter-spacing: 10px;
+      color: rgba(255, 86, 13, 0.9);  ;
+   }
+ }
+
+ .header-content p
+ {
+    font-size: 23px;
+    margin-top: 30px;
+    margin-right: 40px;
+    padding-left: 50px;
+   text-align: center;
+   padding-top: 10px;
+   line-height: 30px;
+   color:green;
+   animation: p 6s 1;
+   animation-iteration-count: infinite; 
+ }
+
+ 
+
+ 
+
+ @keyframes p
+ {
+   0%{
+      color: rgb(255, 255, 255);
+     
+     
+   }
+   
+   
+   100%
+   {
+      color:  green;
+   }
+ }
+
+.logo{
+   height: 60px;
+   width: 50px;
+   display:flex;
+   color: rgb(217, 211, 211);
+   font-size: 20px;
+   font-family: 'Arvo',serif;
+   margin-left: 50px;
+   margin-top: 30px ;
+}
+   .navbar{
+       height: 100px;
+       width: 100vw;
+       background-color: #ffffff;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px;
+   }
+   .navbar ul{
+       list-style: none; 
+       padding: 10px;
+       margin-top: 30px;
+       margin-left: 40px;
+       text-align: center;
+   
+   }
+   .navbar a{
+       text-decoration: none; 
+       color:#694b17;
+       font-family: 'Arvo' ,serif;
+   }
+   .navbar li{
+       display: inline; 
+       font-size: 25px;
+       margin: 0 25px;
+       padding: 30px;
+   }
+   .navbar a:hover{
+     
+       color: rgb(255, 115, 1);
+       
+       font-family: 'Arvo',serif;
+   }
+   
+   @media only screen and (min-width: 768px) and (max-width: 1024px) {
+   
+   
+       .navbar {
+           height: 150px;
+          display: block;
+          margin:auto;
+       }
+       .logo {
+           display: block;
+       margin-left: 300px;
+           margin-top: 15px;
+        
+          
+       }
+       .navbar ul{
+           width:100%;
+           display: block;
+          text-align: center;
+         margin-top: 20px;
+         
+        
+       } 
+       .navbar ul li {
+           display: inline;
+          padding:  10px;
+          margin-left: 30px;
+          
+       }
+
+      }
+
+.menu
+{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap:wrap;
+  margin: 0px 80px;
+   
+   
+}
+.naslov-sekcije h1
+{
+   text-align: center;
+   font-family: 'Abril Fatface', cursive;
+   color: rgb(255, 128, 0);
+   font-size: 45px;
+  padding-top: 20px;
+}
+.meni-kolone
+{
+   width:32%;
+   justify-content: center;
+   padding: 30px 0;
+   
+   
+  
+}
+
+.meni-kolone h4
+{
+   font-family: 'Arvo', serif;
+   font-size: 35px;
+   font-weight: 500;
+   margin-left: 50px;
+   margin-bottom: 40px;
+   color: rgba(184, 35, 35, 0.906);
+}
+
+.pojedinacni-meni
+{
+    display:flex;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+   
+}
+.pojedinacni-meni img
+{
+   border-radius: 50%;
+   max-width: 245px;
+   padding: 3px;
+   margin-right: 15px;
+  
+}
+
+.pojedinacni-meni img:hover
+{
+   width: 240px;
+   
+}
+
+
+.pojedinacni-meni .meni-kontent h5
+{
+   
+   font-family: 'Arvo', serif;
+   font-size:20px;
+   font-weight: 400;
+   font-style: italic;
+  
+   float: right;
+   color: rgb(100, 4, 4);
+   border-bottom: 1px dotted rgb(95, 91, 85);
+   padding-bottom: 5px;
+   margin-bottom: 10px;
+
+}
+.pojedinacni-meni .meni-kontent h5 span
+{
+    color:rgb(123, 183, 3);
+    float: right;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.pojedinacni-meni .meni-kontent h5 span:hover
+{
+   font-size: 17px;
+}
+
+.pojedinacni-meni .meni-kontent p
+{
+   text-align: center;
+   color: rgb(249, 247, 247);
+   font-size: 20px;
+   float: right;
+}
+
+
+
+.onama
+{
+   width: 100vw;
+   height: 100%;
+   padding: 100px 0;
+   background-color: rgb(255, 255, 255);
+}
+.onama img
+{
+   width: 40%;
+   height: 40%;
+
+  
+}
+
+.main
+{
+   margin: 0 auto;
+  width: 87%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+   color: rgb(221, 50, 50);
+}
+
+.onama-text h1
+{
+   
+   margin-bottom: 40px;
+
+   text-align: center;
+   font-size: 40px;
+   font-family: 'Abril Fatface', cursive;
+   letter-spacing: 3px;
+   color: rgb(129, 187, 14);
+}
+
+.onama-text p
+{
+   line-height: 25px;
+   letter-spacing: 2px;
+   text-align: center;
+   font-size: 20px;
+   font-family: 'Montserrat', sans-serif;
+   font-style: italic;
+   font-weight: 500;
+   color: rgb(255, 89, 0);
+   margin-left: 80px;
+  
+}
+
+
+
+.onama-text span
+{
+   font-weight: bold;
+   color: rgba(143, 113, 73, 0.861);
+  
+}
+
+
+
+.kontejner
+{
+   width: 100vw;
+   height: 100vh;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100vw;
+   height: 100vh;
+   padding: 20px 100px;
+   background-color: white;
+   
+   
+}
+.kontakt-box
+{
+   max-width: 850px;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+  background-color: white;
+   box-shadow: 0px 0px  10px 5px rgb(177, 172, 167);
+   
+   
+}
+
+.levo
+{
+   height: 100%;
+   background: url(lokacija.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.desno
+{
+   padding: 25px 40px;
+}
+
+
+h2
+{
+   position: relative;
+   padding-bottom: 10px;
+   margin-bottom: 10px;
+   color:rgba(255, 93, 24, 0.9); 
+   font-family: 'Arvo', serif;
+   font-size:40px;
+   font-weight: bold;
+   letter-spacing: 3px;
+}
+
+input[type='text']
+{
+   
+   width: 80%;
+   height: 100%;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  background-color:rgba(237, 238, 235, 0.973);
+  color:olive;
+  font-family: 'Arvo', serif;
+  border: 1px dotted rgba(197, 63, 6, 0.9);
+  border-radius: 10px;
+   
+}
+.polje::placeholder
+{
+   color:olive;
+   font-family: 'Arvo', serif;
+   
+}
+.polje:focus
+{
+   background-color: white; 
+}
+
+.poljeoblast
+{
+   width: 70%;
+   height: 120px;
+   border-radius: 10px;
+   padding: 8px 16px;
+  margin-bottom: 20px;
+  background-color:rgb(221, 221, 221);
+  color:olive;
+  font-family: 'Arvo', serif;
+  border: 1px dotted rgba(197, 63, 6, 0.9);
+}
+
+.poljeoblast::placeholder
+{
+   color:olive;
+   font-family: 'Arvo', serif;
+   
+}
+.poljeoblast:focus
+{
+   background-color: white; 
+}
+
+.dugme
+{
+   width: 50%;
+   padding: 8px 16px;
+   border-radius: 10px;
+   font-size: 17px;
+   background-color: rgb(165, 243, 11);
+   border-color: rgb(165, 243, 11);
+   color: rgb(0, 0, 0);
+   font-family: 'Arvo', serif;
+   transition: 0.3s;
+}
+
+.dugme:hover
+{
+   background-color: rgb(178, 54, 54);
+   border-color:rgb(178, 54, 54); ;
+   color: white;
+   width: 57%;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 880px){
+	.kontakt-box{
+		grid-template-columns: 1fr;
+      
+	}
+	.levo{
+		height: 200px;
+	}
+}
